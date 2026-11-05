@@ -60,7 +60,7 @@ main{padding:30px clamp(18px,4vw,54px);max-width:1500px;width:100%;margin:auto}.
 <div class="field full"><label>Catatan / deskripsi</label><textarea id="fDesc" placeholder="Detail tambahan..."></textarea></div>
 </div><div class="actions" style="justify-content:flex-end;margin-top:18px"><button type="button" id="deleteBtn" style="display:none;color:#a44">Hapus</button><button type="button" id="cancelBtn">Batal</button><button class="primary" type="submit">Simpan</button></div></form></div></div>
 <script>
-const API_BASE = "PASTE_WORKER_URL_HERE"; // contoh: https://daybook-api.username.workers.dev
+const API_BASE = "https://daybook.arifalami96.workers.dev"; // contoh: https://daybook-api.username.workers.dev
 let token = sessionStorage.getItem("daybook_token") || "";
 let items = [], selectedDate = iso(new Date()), month = new Date(); month.setDate(1);
 let editingId = null;
